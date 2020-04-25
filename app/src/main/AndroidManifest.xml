@@ -9,13 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ArtBoardsActivity"></activity>
-        <activity android:name=".onboarding.DetailActivity" />
-        <activity android:name=".DetailActivity" />
-        <activity android:name=".HomeActivity" />
         <activity android:name=".onboarding.OnBoardingThreeActivity" />
         <activity android:name=".onboarding.OnBoardingTwoActivity" />
         <activity android:name=".onboarding.OnBoardingOneActivity" />
+        <activity android:name=".ChooseSeatActivity"></activity>
+        <activity android:name=".ArtBoardsActivity" />
+        <activity android:name=".CheckoutActivity" />
+        <activity android:name=".HomeActivity" />
         <activity android:name=".SignInActivity" />
         <activity android:name=".SignUpActivity" />
         <activity android:name=".SignUpPhotoScreenActivity" />

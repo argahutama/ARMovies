@@ -28,4 +28,13 @@
     <string name="story_board">Story Board</string>
     <string name="whos_played">Who\'s Played</string>
     <string name="choose_seat">Choose Seat</string>
+    <string name="buy_ticket">Buy Ticket</string>
+    <string name="cancel">Cancel</string>
+    <string name="checkout">Checkout</string>
+    <string name="when">When</string>
+    <string name="date_time"><![CDATA[Date & Time]]></string>
+    <string name="cinema">Cinema</string>
+    <string name="e_wallet">E-Wallet</string>
+    <string name="total_balance">Total Balance</string>
+    <string name="purchase_now">Purchase Now</string>
 </resources>

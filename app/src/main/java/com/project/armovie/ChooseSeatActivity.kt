@@ -3,10 +3,10 @@ package com.project.armovie
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class HomeActivity : AppCompatActivity() {
+class ChooseSeatActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_home)
+        setContentView(R.layout.activity_choose_seat)
     }
 }
