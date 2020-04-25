@@ -1,0 +1,2 @@
+rootProject.name='Ar Movies'
+include ':app'
