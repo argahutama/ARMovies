@@ -8,7 +8,7 @@
     <string name="pre_sale_desc">Don\'t worry about\nmissing the latest movie</string>
     <string name="cashless">Cashless</string>
     <string name="cashless_desc">Use e-wallet for transactions</string>
-    <string name="getting_started">Getting Started</string>
+    <string name="get_started">Get Started</string>
     <string name="sign_in">Sign In</string>
     <string name="sign_up">Sign Up</string>
     <string name="create_account">Create Account</string>
@@ -42,4 +42,7 @@
     <string name="your_balance">Your Balance</string>
     <string name="transaction_history">Transaction History</string>
     <string name="my_history">My History</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

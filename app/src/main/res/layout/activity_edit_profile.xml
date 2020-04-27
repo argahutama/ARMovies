@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorBlue"
-    tools:context=".SignUpActivity">
+    tools:context=".sign.signup.SignUpActivity">
 
     <EditText
         android:id="@+id/editText5"
@@ -59,7 +59,7 @@
         app:layout_constraintTop_toBottomOf="@+id/editText3" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/et_fullname"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -109,7 +109,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tv_hello"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -143,7 +143,7 @@
         tools:ignore="MissingConstraints" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/et_username"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -160,7 +160,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/et_password"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -188,8 +188,8 @@
 
     <ImageView
         android:id="@+id/imageView12"
-        android:layout_width="150"
-        android:layout_height="150"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
@@ -200,10 +200,11 @@
 
     <ImageView
         android:id="@+id/imageView14"
-        android:layout_width="30"
-        android:layout_height="30"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
         app:srcCompat="@drawable/btn_remove_picture"
         tools:layout_editor_absoluteX="239dp"
-        tools:layout_editor_absoluteY="188dp" />
+        tools:layout_editor_absoluteY="188dp"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
