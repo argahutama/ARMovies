@@ -23,7 +23,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/btn_purchase_now"
+        android:id="@+id/btn_tiket"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -128,7 +128,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         android:fontFamily="@font/montserrat"
-        android:text="Cinepolis21 Lippo Cikarang, Cinema 3"
+        android:text="Depok Mall, Cinema 3"
         android:textColor="@color/colorWhite"
         android:textSize="12sp"
         android:textStyle="bold"
@@ -142,7 +142,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="24dp"
         android:fontFamily="@font/montserrat"
-        android:text="@string/items"
+        android:text="Items"
         android:textColor="@color/colorWhite"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -199,5 +199,6 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textView28" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

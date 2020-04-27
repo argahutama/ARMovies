@@ -18,6 +18,6 @@ class SplashScreenActivity : AppCompatActivity() {
                 OnBoardingOneActivity::class.java)
             startActivity(intent)
             finish()
-        }, 2300)
+        }, 2000)
     }
 }

@@ -33,7 +33,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:padding="15dp"
-            android:src="@drawable/ic_profile" />
+            android:src="@drawable/ic_ticket" />
 
         <ImageView
             android:id="@+id/iv_menu2"
@@ -49,7 +49,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:padding="15dp"
-            android:src="@drawable/ic_ticket" />
+            android:src="@drawable/ic_profile" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

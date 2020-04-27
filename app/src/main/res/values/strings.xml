@@ -42,7 +42,9 @@
     <string name="your_balance">Your Balance</string>
     <string name="transaction_history">Transaction History</string>
     <string name="my_history">My History</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="keep_it_up_to_date">Keep it up to date</string>
+    <string name="see_ticket">See Ticket</string>
+    <string name="happy_watching">Happy Watching</string>
+    <string name="back">Back</string>
+    <string name="items">Items</string>
 </resources>
