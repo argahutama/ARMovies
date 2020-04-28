@@ -1,11 +1,11 @@
-package com.project.armovie.home.checkout
+package com.project.armovie.checkout
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import com.project.armovie.R
-import com.project.armovie.home.checkout.model.Checkout
+import com.project.armovie.checkout.model.Checkout
 import com.project.armovie.home.model.Movies
 import kotlinx.android.synthetic.main.activity_choose_seat.*
 
@@ -40,7 +40,7 @@ class ChooseSeatActivity : AppCompatActivity() {
 
                 val data = Checkout(
                     "A3",
-                    "70000"
+                    "20000"
                 )
                 dataList.add(data)
             }
@@ -60,7 +60,7 @@ class ChooseSeatActivity : AppCompatActivity() {
 
                 val data = Checkout(
                     "A4",
-                    "70000"
+                    "20000"
                 )
                 dataList.add(data)
             }

@@ -1,4 +1,4 @@
-package com.project.armovie.home.checkout.adapter
+package com.project.armovie.checkout.adapter
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.project.armovie.R
-import com.project.armovie.home.checkout.model.Checkout
+import com.project.armovie.checkout.model.Checkout
 import java.text.NumberFormat
 import java.util.*
 
@@ -54,7 +54,5 @@ class CheckoutAdapter(private var data: List<Checkout>,
                 listener(data)
             }
         }
-
     }
-
 }

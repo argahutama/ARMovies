@@ -34,13 +34,12 @@ class PlaysAdapter(private var data: List<Plays>,
 
     class LeagueViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 
-        private val tvTitle: TextView = view.findViewById(R.id.tv_title)
-
+        private val tvActorName: TextView = view.findViewById(R.id.tv_actor_name)
         private val tvImage: ImageView = view.findViewById(R.id.iv_poster_image)
 
         fun bindItem(data: Plays, listener: (Plays) -> Unit, context : Context, position : Int) {
 
-            tvTitle.text = data.name
+            tvActorName.text = data.name
 
             Glide.with(context)
                 .load(data.url)

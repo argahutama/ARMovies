@@ -7,7 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.bumptech.glide.Glide
 import com.google.firebase.database.*
-import com.project.armovie.home.checkout.ChooseSeatActivity
+import com.project.armovie.checkout.ChooseSeatActivity
 import com.project.armovie.home.dashboard.PlaysAdapter
 import com.project.armovie.home.model.Movies
 import com.project.armovie.home.model.Plays
@@ -26,7 +26,7 @@ class DetailActivity : AppCompatActivity() {
 
         mDatabase = FirebaseDatabase.getInstance().getReference("Movies")
             .child(data.title.toString())
-            .child("play")
+            .child("actor")
 
         tv_title.text = data.title
         tv_genre.text = data.genre

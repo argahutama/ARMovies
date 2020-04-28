@@ -1,4 +1,4 @@
-package com.project.armovie.home.checkout.model
+package com.project.armovie.checkout.model
 
 import android.os.Parcelable
 import kotlinx.android.parcel.Parcelize

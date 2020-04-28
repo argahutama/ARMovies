@@ -1,15 +1,14 @@
-package com.project.armovie.home.checkout
+package com.project.armovie.checkout
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.project.armovie.R
-import com.project.armovie.home.checkout.adapter.CheckoutAdapter
-import com.project.armovie.home.checkout.model.Checkout
+import com.project.armovie.checkout.adapter.CheckoutAdapter
+import com.project.armovie.checkout.model.Checkout
 import com.project.armovie.utils.Preferences
 import kotlinx.android.synthetic.main.activity_checkout.*
-import kotlinx.android.synthetic.main.activity_choose_seat.*
 import java.text.NumberFormat
 import java.util.*
 import kotlin.collections.ArrayList
@@ -40,7 +39,7 @@ class CheckoutActivity : AppCompatActivity() {
             )
         )
 
-        btn_buy_ticket.setOnClickListener {
+        btn_purchase_now.setOnClickListener {
             val intent = Intent(this@CheckoutActivity,
                 CheckoutSuccessActivity::class.java)
             startActivity(intent)

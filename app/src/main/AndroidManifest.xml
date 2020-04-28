@@ -31,10 +31,10 @@
         <activity android:name=".onboarding.OnBoardingThreeActivity" />
         <activity android:name=".onboarding.OnBoardingTwoActivity" />
         <activity android:name=".onboarding.OnBoardingOneActivity" />
-        <activity android:name=".home.checkout.ChooseSeatActivity" />
-        <activity android:name=".home.checkout.CheckoutSuccessActivity" />
+        <activity android:name="com.project.armovie.checkout.ChooseSeatActivity" />
+        <activity android:name="com.project.armovie.checkout.CheckoutSuccessActivity" />
         <activity android:name=".ArtBoardsActivity" />
-        <activity android:name=".home.checkout.CheckoutActivity" />
+        <activity android:name="com.project.armovie.checkout.CheckoutActivity" />
         <activity android:name=".EditProfileActivity" />
         <activity android:name=".home.HomeActivity" />
         <activity android:name=".sign.signin.SignInActivity" />

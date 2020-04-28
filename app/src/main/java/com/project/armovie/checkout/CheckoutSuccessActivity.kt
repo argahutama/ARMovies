@@ -1,4 +1,4 @@
-package com.project.armovie.home.checkout
+package com.project.armovie.checkout
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
