@@ -1,4 +1,4 @@
-package com.project.armovie
+package com.project.armovie.home.dashboard
 
 import android.content.Intent
 import android.os.Bundle
@@ -9,13 +9,13 @@ import android.view.ViewGroup
 import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.project.armovie.DetailActivity
+import com.project.armovie.R
+import com.project.armovie.home.model.Movies
+import com.project.armovie.utils.Preferences
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.google.firebase.database.*
-import com.project.armovie.home.dashboard.ComingSoonAdapter
-import com.project.armovie.home.dashboard.NowPlayingAdapter
-import com.project.armovie.home.model.Movies
-import com.project.armovie.utils.Preferences
 import kotlinx.android.synthetic.main.fragment_dashboard.*
 import java.text.NumberFormat
 import java.util.*
@@ -25,6 +25,7 @@ import kotlin.collections.ArrayList
  * A simple [Fragment] subclass.
  */
 class DashboardFragment : Fragment() {
+
     private lateinit var preferences: Preferences
     lateinit var mDatabase: DatabaseReference
 
@@ -46,7 +47,7 @@ class DashboardFragment : Fragment() {
 
         tv_name.setText(preferences.getValues("name"))
         if (!preferences.getValues("balance").equals("")){
-            currecy(preferences.getValues("balance")!!.toDouble(), tv_amount)
+            currency(preferences.getValues("balance")!!.toDouble(), tv_balance)
         }
 
         Glide.with(this)
@@ -91,11 +92,10 @@ class DashboardFragment : Fragment() {
         })
     }
 
-    private fun currecy(amount:Double, textView: TextView) {
+    private fun currency(amount:Double, textView: TextView) {
         val localeID = Locale("in", "ID")
         val formatRupiah = NumberFormat.getCurrencyInstance(localeID)
         textView.setText(formatRupiah.format(amount as Double))
 
     }
-
 }

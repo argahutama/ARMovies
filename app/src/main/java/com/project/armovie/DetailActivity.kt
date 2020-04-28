@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.bumptech.glide.Glide
 import com.google.firebase.database.*
+import com.project.armovie.home.checkout.ChooseSeatActivity
 import com.project.armovie.home.dashboard.PlaysAdapter
 import com.project.armovie.home.model.Movies
 import com.project.armovie.home.model.Plays
@@ -57,8 +58,8 @@ class DetailActivity : AppCompatActivity() {
                 dataList.clear()
                 for (getdataSnapshot in dataSnapshot.getChildren()) {
 
-                    val film = getdataSnapshot.getValue(Plays::class.java!!)
-                    dataList.add(film!!)
+                    val movies = getdataSnapshot.getValue(Plays::class.java!!)
+                    dataList.add(movies!!)
                 }
 
                 rv_who_play.adapter = PlaysAdapter(dataList) {

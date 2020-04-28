@@ -24,14 +24,15 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme.noActionBar"
         tools:targetApi="q">
-        <activity android:name=".home.checkout.CheckoutSuccessActivity"></activity>
+
         <activity android:name=".DetailActivity" />
         <activity android:name=".HistoryActivity" />
         <activity android:name=".MyWalletActivity" />
         <activity android:name=".onboarding.OnBoardingThreeActivity" />
         <activity android:name=".onboarding.OnBoardingTwoActivity" />
         <activity android:name=".onboarding.OnBoardingOneActivity" />
-        <activity android:name=".ChooseSeatActivity" />
+        <activity android:name=".home.checkout.ChooseSeatActivity" />
+        <activity android:name=".home.checkout.CheckoutSuccessActivity" />
         <activity android:name=".ArtBoardsActivity" />
         <activity android:name=".home.checkout.CheckoutActivity" />
         <activity android:name=".EditProfileActivity" />
@@ -42,7 +43,6 @@
         <activity android:name=".SplashScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

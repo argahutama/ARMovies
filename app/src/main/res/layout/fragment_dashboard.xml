@@ -32,11 +32,11 @@
         android:layout_width="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         android:textColor="@color/colorWhite"
-        android:text="Rp 0"
+        android:text="IDR 90000"
         android:fontFamily="@font/montserrat"
         android:layout_marginTop="8dp"
         android:layout_marginStart="16dp"
-        android:id="@+id/tv_amount"
+        android:id="@+id/tv_balance"
         app:layout_constraintTop_toBottomOf="@+id/tv_name"
         android:drawablePadding="10dp"
         android:drawableStart="@drawable/ic_wallet"/>
@@ -61,7 +61,7 @@
         android:layout_marginTop="24dp"
         android:layout_marginStart="16dp"
         android:id="@+id/textView9"
-        app:layout_constraintTop_toBottomOf="@+id/tv_amount"
+        app:layout_constraintTop_toBottomOf="@+id/tv_balance"
         android:textAllCaps="true"/>
 
     <androidx.recyclerview.widget.RecyclerView

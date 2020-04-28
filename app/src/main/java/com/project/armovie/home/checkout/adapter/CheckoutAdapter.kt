@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.project.armovie.R
-import com.project.armovie.home.checkout.Checkout
+import com.project.armovie.home.checkout.model.Checkout
 import java.text.NumberFormat
 import java.util.*
 
@@ -33,21 +33,21 @@ class CheckoutAdapter(private var data: List<Checkout>,
 
     class LeagueViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 
-        private val tvTitle: TextView = view.findViewById(R.id.tv_title)
-        private val tvAmount: TextView = view.findViewById(R.id.tv_amount)
-        
-        fun bindItem(data: Checkout, listener: (Checkout) -> Unit, context : Context, position : Int) {
+        private val tvSeat: TextView = view.findViewById(R.id.tv_seat)
+        private val tvPrice: TextView = view.findViewById(R.id.tv_price)
 
+
+        fun bindItem(data: Checkout, listener: (Checkout) -> Unit, context : Context, position : Int) {
 
             val localeID = Locale("in", "ID")
             val formatRupiah = NumberFormat.getCurrencyInstance(localeID)
-            tvAmount.setText(formatRupiah.format(data.amount!!.toDouble()))
+            tvPrice.setText(formatRupiah.format(data.price!!.toDouble()))
 
             if (data.seat!!.startsWith("Total")){
-                tvTitle.text = data.seat
-                tvTitle.setCompoundDrawables(null,null,null,null)
+                tvSeat.text = data.seat
+                tvSeat.setCompoundDrawables(null,null,null,null)
             } else {
-                tvTitle.text = "Seat No. "+data.seat
+                tvSeat.text = "Seat No. "+data.seat
             }
 
             itemView.setOnClickListener {
@@ -58,4 +58,3 @@ class CheckoutAdapter(private var data: List<Checkout>,
     }
 
 }
-

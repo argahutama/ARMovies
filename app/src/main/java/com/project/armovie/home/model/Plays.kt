@@ -6,6 +6,6 @@ import kotlinx.android.parcel.Parcelize
 
 @Parcelize
 data class Plays (
-    var nama: String ?="",
+    var name: String ?="",
     var url: String ?=""
 ): Parcelable

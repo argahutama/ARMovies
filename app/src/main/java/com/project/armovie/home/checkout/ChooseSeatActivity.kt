@@ -1,11 +1,11 @@
-package com.project.armovie
+package com.project.armovie.home.checkout
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import com.project.armovie.home.checkout.Checkout
-import com.project.armovie.home.checkout.CheckoutActivity
+import com.project.armovie.R
+import com.project.armovie.home.checkout.model.Checkout
 import com.project.armovie.home.model.Movies
 import kotlinx.android.synthetic.main.activity_choose_seat.*
 
@@ -38,7 +38,10 @@ class ChooseSeatActivity : AppCompatActivity() {
                 total +=1
                 buyTicket(total)
 
-                val data = Checkout("A3", "70000")
+                val data = Checkout(
+                    "A3",
+                    "70000"
+                )
                 dataList.add(data)
             }
         }
@@ -55,7 +58,10 @@ class ChooseSeatActivity : AppCompatActivity() {
                 total +=1
                 buyTicket(total)
 
-                val data = Checkout("A4", "70000")
+                val data = Checkout(
+                    "A4",
+                    "70000"
+                )
                 dataList.add(data)
             }
         }

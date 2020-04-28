@@ -1,4 +1,4 @@
-package com.project.armovie.home.checkout
+package com.project.armovie.home.checkout.model
 
 import android.os.Parcelable
 import kotlinx.android.parcel.Parcelize
@@ -6,5 +6,5 @@ import kotlinx.android.parcel.Parcelize
 @Parcelize
 data class Checkout (
     var seat: String ?="",
-    var amount: String ?=""
+    var price: String ?=""
 ): Parcelable
