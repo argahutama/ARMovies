@@ -82,6 +82,7 @@ class SignUpActivity : AppCompatActivity() {
                     preferences.setValues("user", data.username.toString())
                     preferences.setValues("url", "")
                     preferences.setValues("email", data.email.toString())
+                    preferences.setValues("balance","200000")
                     preferences.setValues("status", "1")
 
                     val intent = Intent(this@SignUpActivity,

@@ -61,8 +61,7 @@ class SignUpPhotoScreenActivity : AppCompatActivity(), PermissionListener {
             }
         }
 
-        btn_save_picture.setOnClickListener {
-
+        btn_upload_later.setOnClickListener {
             finishAffinity()
 
             val intent = Intent(this@SignUpPhotoScreenActivity,
