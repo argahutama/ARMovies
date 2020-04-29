@@ -45,6 +45,10 @@ class CheckoutActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        btn_cancel.setOnClickListener {
+            finish()
+        }
+
         rc_checkout.layoutManager = LinearLayoutManager(this)
         rc_checkout.adapter = CheckoutAdapter(dataList) {
         }
